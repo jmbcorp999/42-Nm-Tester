@@ -7,7 +7,7 @@ Place the ELF 32/64 files you wish to test inside an exemple_files directory.
 
 ----
 
-##Usage
+## Usage
 1. Clone the repository
 ``git clone (https://github.com/jmbcorp999/42-Nm-Tester)``
 <br>
@@ -31,7 +31,7 @@ After running the script, it will process each file inside the example_files dir
 
 ----
 
-##Interpreting the Output
+## Interpreting the Output
 The script categorizes its results into:
 
 **Files that are OK**: These files do not show any significant difference between the two commands' outputs (see ok.txt for details).
@@ -50,7 +50,7 @@ The script categorizes its results into:
 
 ----
 
-##Usefull ressources for the project :
+## Usefull ressources for the project :
 https://own2pwn.fr/elf-intro (french)
 https://sourceware.org/binutils/docs/binutils/nm.html
 https://medium.com/obscure-system/symbolism-in-nm-4af02e425710
