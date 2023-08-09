@@ -1,9 +1,14 @@
 # 42-NM_Tester
+
 This script is designed to compare the output of the ft_nm command with the standard nm command on ELF 32/64 files.
 
-##Requirements
-Ensure you have the stdbuf utility installed on your system.
-Place the ELF 32/64 files you wish to test inside an exemple_files directory.
+## Requirements
+
+- stdbuf utility installed on your system.
+
+- Some ELF 32/64 files you wish to test inside an exemple_files directory.
+
+- Your ft_nm executable file.
 
 ----
 
@@ -29,11 +34,9 @@ Place the ELF 32/64 files you wish to test inside an exemple_files directory.
 ``chmod +x tester_bash.sh``
 
 
-8. Run the script (only one test)
+8. Run the script (to test only one specific file)
    
 ``./tester_unique.sh [FILE_TO_TEST]``
-
-For testing only one specific file.
 
 9. Or Run the script (bach tests)
     
@@ -43,12 +46,13 @@ For testing all the files inside the exemple_files directory (67 are allready pr
 
 After running the script, it will process each file inside the example_files directory, comparing the output of ./ft_nm with the standard nm command. Results are saved in the results.txt file.
 
+
 ----
 
 ## Interpreting the Output
 The script categorizes its results into:
 
-**OK**: These files do not show any significant difference between the two commands' outputs (see ok.txt for details).
+**OK**: These files do not show any difference between the two commands' outputs (see ok.txt for details).
 
 **Different content**: These files had some differences in the main content of the output (see diff_content.txt for details).
 
@@ -58,9 +62,12 @@ The script categorizes its results into:
 
 **For a detailed breakdown, check the results.txt file after the script runs (same infos as the prompt output).**
 
+*Sometimes, for very small programs and if there's a difference between nm and ft_nm outputs, the tester could classify this into the  "different error messages" section.*, whatever, **check the log files** !
+
 ----
 
 **Tested with Ubuntu 23.04 / GNU nm (GNU Binutils for Ubuntu) 2.40**
+**Do not use this script to stupidly put "failed" to a person you are evaluating! Use your brain, for god's sake!**
 
 ----
 
