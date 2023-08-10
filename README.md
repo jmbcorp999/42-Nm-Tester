@@ -42,7 +42,7 @@ This script is designed to compare the output of the ft_nm command with the stan
     
 ``./tester_bash.sh``
 
-For testing all the files inside the exemple_files directory (67 are allready present inside, in two subfolders good_files and bad_files)
+For testing all the files inside the exemple_files directory (79 are allready present inside, in three subfolders mandatory, good_files and bad_files)
 
 After running the script, it will process each file inside the example_files directory, comparing the output of ./ft_nm with the standard nm command. Results are saved in the results.txt file.
 
