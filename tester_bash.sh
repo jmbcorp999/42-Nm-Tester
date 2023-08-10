@@ -67,10 +67,10 @@ SEGFAULTS=$(cat segfaults.txt | wc -l)
     cat ok.txt
     echo "---------------------------------------------------------------------"
     echo "Files with different content: " $DIFF_CONTENT
-    cat diff_content.txt | grep -v "<" | grep "example_files"
+    cat diff_content.txt | grep -v "<" | grep "exemple_files"
     echo "---------------------------------------------------------------------"
     echo "Files with different error message: " $DIFF_ERROR_MSG
-    cat diff_errormsg.txt | grep -v "<" | grep -v ">" | grep -v "bfd plugin: example_files" | grep "example_files"
+    cat diff_errormsg.txt | grep -v "<" | grep -v ">" | grep -v "bfd plugin: exemple_files" | grep "exemple_files"
     echo "---------------------------------------------------------------------"
     echo "Files causing segfault: " $SEGFAULTS
     cat segfaults.txt
