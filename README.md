@@ -67,7 +67,8 @@ The script categorizes its results into:
 ----
 
 **Tested with Ubuntu 23.04 / GNU nm (GNU Binutils for Ubuntu) 2.40**
-**Do not use this script to stupidly put "failed" to a person you are evaluating! Use your brain, for god's sake!**
+
+### **Do not use this script to stupidly put "failed" to a person you are evaluating! Use your brain, for god's sake!**
 
 ----
 
